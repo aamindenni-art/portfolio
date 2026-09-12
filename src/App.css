@@ -227,6 +227,21 @@ section {
   border-radius: 6px;
 }
 
+/* ---- about ---- */
+.about {
+  max-width: 68ch;
+  color: var(--muted);
+  font-size: 17px;
+  margin: 0;
+}
+
+/* ---- contact ---- */
+.contact-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 /* ---- footer ---- */
 .footer {
   display: flex;

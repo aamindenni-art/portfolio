@@ -40,8 +40,9 @@ function App() {
           <span className="mono monogram">AD</span> Adam Denni
         </div>
         <nav className="nav-links">
+          <a href="#apropos">À propos</a>
           <a href="#projets">Projets</a>
-          <a href="#stack">Stack</a>
+          <a href="#contact">Contact</a>
           <a
             className="btn-ghost"
             href="https://github.com/aamindenni-art"
@@ -112,6 +113,35 @@ function App() {
                 </div>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section id="apropos">
+          <h2 className="eyebrow">À propos</h2>
+          <p className="about">
+            Ingénieur et développeur, je travaille à l’intersection de la
+            finance réglementaire et du logiciel : conception de plateformes de
+            supervision bancaire (SupTech), modèles de scoring et de données, et
+            interfaces web modernes. J’aime livrer des produits robustes — de la
+            donnée brute jusqu’à l’expérience utilisateur — avec une exigence de
+            clarté et de fiabilité en production.
+          </p>
+        </section>
+
+        <section id="contact">
+          <h2 className="eyebrow">Contact</h2>
+          <p className="lead" style={{ marginBottom: 22 }}>
+            Un projet, une collaboration ? Écrivons-nous.
+          </p>
+          <div className="contact-links">
+            <a
+              className="btn"
+              href="https://github.com/aamindenni-art"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
           </div>
         </section>
       </main>
