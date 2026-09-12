@@ -1,32 +1,50 @@
-# React + TypeScript + Vite
+# Portfolio — Amin Denni
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Portfolio personnel de **Amin Denni**, développeur (supervision bancaire & web).
+Site vitrine construit avec **Vite + React + TypeScript**, déployé sur GitHub Pages.
 
-Currently, two official plugins are available:
+🌐 **En ligne** : https://aamindenni-art.github.io/portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Aperçu
 
-## React Compiler
+- Page unique : présentation, stack technique, projets, à propos, contact
+- Thème sombre premium (bleu nuit + accent teal), responsive, accessible
+- Liens LinkedIn & GitHub
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Stack
 
-## Expanding the Oxlint configuration
+- **React 19** + **TypeScript**
+- **Vite** (build & serveur de développement)
+- CSS maison (aucune dépendance UI), polices IBM Plex
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+## Démarrer en local
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install      # installer les dépendances
+npm run dev      # serveur de développement (http://localhost:5173)
+npm run build    # build de production dans dist/
+npm run preview  # prévisualiser le build
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Déploiement
+
+Le déploiement est **automatique** : chaque `git push` sur la branche `main`
+déclenche le workflow GitHub Actions (`.github/workflows/deploy.yml`) qui build
+le site et le publie sur GitHub Pages.
+
+> Le chemin de base est configuré dans `vite.config.ts` (`base: '/portfolio/'`)
+> pour correspondre à l'URL du dépôt sur GitHub Pages.
+
+## Structure
+
+```
+src/
+├── App.tsx      # composant principal (contenu de la page)
+├── App.css      # styles des composants
+├── index.css    # réinitialisation + thème (variables CSS)
+└── main.tsx     # point d'entrée React
+```
+
+---
+
+© 2026 Amin Denni

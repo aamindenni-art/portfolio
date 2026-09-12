@@ -13,7 +13,7 @@ const stack = [
 
 const projects = [
   {
-    name: 'SupTech Platform',
+    name: 'Plateforme SupTech',
     domain: 'Supervision',
     desc: 'Plateforme de supervision bancaire : collecte COREP, scoring CAMELS et tableaux de bord superviseur.',
     tags: ['Python', 'PostgreSQL', 'Docker'],
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: 'Modèles ML',
-    domain: 'Data Science',
+    domain: 'Science des données',
     desc: 'Scoring, matrices de confusion et importance des variables sur données bancaires.',
     tags: ['Python', 'scikit-learn'],
   },
@@ -156,7 +156,7 @@ function App() {
 
       <footer className="footer">
         <span className="mono">© 2026 Amin Denni</span>
-        <span className="mono faint">C:\Workspace · built with Vite + React</span>
+        <span className="mono faint">C:\Workspace · réalisé avec Vite + React</span>
       </footer>
     </div>
   )
