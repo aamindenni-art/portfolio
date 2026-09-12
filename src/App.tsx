@@ -136,6 +136,14 @@ function App() {
           <div className="contact-links">
             <a
               className="btn"
+              href="https://www.linkedin.com/in/amin-denni-a91681286/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              className="btn-ghost"
               href="https://github.com/aamindenni-art"
               target="_blank"
               rel="noreferrer"
