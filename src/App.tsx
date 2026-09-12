@@ -37,7 +37,7 @@ function App() {
     <div className="page">
       <header className="nav">
         <div className="brand">
-          <span className="mono monogram">AD</span> Adam Denni
+          <span className="mono monogram">AD</span> Amin Denni
         </div>
         <nav className="nav-links">
           <a href="#apropos">À propos</a>
@@ -155,7 +155,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <span className="mono">© 2026 Adam Denni</span>
+        <span className="mono">© 2026 Amin Denni</span>
         <span className="mono faint">C:\Workspace · built with Vite + React</span>
       </footer>
     </div>
